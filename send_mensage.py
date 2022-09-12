@@ -16,7 +16,7 @@ navegador.get("https://web.whatsapp.com/")
 while len(navegador.find_elements(By.ID, "side")) < 1:
     time.sleep(1)
 
-#Percorrendo contatos e enviando mensagens
+#Percorrendo contatos
 for i, mensagem in enumerate(contatos_df['Mensagem']):
     pessoa = contatos_df.loc[i, "Pessoa"]
     numero = contatos_df.loc[i, "Número"]
